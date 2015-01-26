@@ -51,7 +51,7 @@ These test cases check the working of the distributed system on the whole.
 
 Few such test cases can be :-
 
-- Message received at the other end is same as what was sent. Eg : if sent msg was “ Add $100 to Account A” then the received message should not be as “Add $100” i.e Message should not be trauncated.
+- Message received at the other end is same as what was sent. Eg : if sent msg was “ Add $100 to Account A” then the received message should not be as “Add $100” i.e Message should not be truncated.
 - If a multicast message is send to processes p1,p2,p3 then it should be received by these 3 only, it shouldn’t be send to some 4th process or send to p1, p2 and p5(can happen if there is coding error, if msg is printed on some other socket also or wrong socket is connected to system’s ip address)
 - Timestamp generated should follow Lamport’s rule, receive of a event should be less than send of the same event.
 - Order of message delivery should be same at every process.
